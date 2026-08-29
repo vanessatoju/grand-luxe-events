@@ -1,0 +1,66 @@
+# Tests
+
+## Test 1 - Explore the venue and convert to a tour enquiry [sanity]
+Viewport: desktop (1280x800)
+Covers: sticky navigation, hero CTAs, venue introduction, fictional spaces, responsive-ready enquiry conversion
+Description: Verifies the primary sales journey from venue discovery to the enquiry form.
+
+Steps:
+1. Open the website and select “BOOK A VENUE TOUR” in the hero
+2. Confirm the page reaches the enquiry section and shows the required booking fields
+3. Use the navigation to open “Spaces”
+4. Confirm The Grand Hall, The Royale Room, and The Intimate Suite are presented as demo spaces
+
+Expected: The visitor can move smoothly from the hero to enquiry, all required fields are visible, and the three fictional demo spaces are clearly labeled.
+
+## Test 2 - Filter the gallery and open an image
+Viewport: desktop (1280x800)
+Covers: gallery category filters, interactive lightbox, demo-image disclosure
+Description: Verifies the gallery provides a polished visual exploration experience.
+
+Steps:
+1. Open Gallery from the navigation
+2. Select the “WEDDINGS” category
+3. Click a visible gallery image
+4. Close the lightbox
+
+Expected: Only matching demo imagery is shown, the selected image opens in a full-screen viewer, and the viewer closes without leaving the page.
+
+## Test 3 - Submit a valid enquiry and verify the demo-only success state
+Viewport: desktop (1280x800)
+Covers: enquiry form validation, valid submission, demo confirmation state, no-real-booking safeguard
+Description: Verifies a completed enquiry produces a clear prototype response rather than pretending to create a real booking.
+
+Steps:
+1. Open the Enquiry section
+2. Enter a valid name, phone, email, event type, preferred date, guest count, and optional message
+3. Select “REQUEST AVAILABILITY”
+
+Expected: A confirmation state appears explaining that this is a demo, no real appointment was created, and a production version could connect to a booking system.
+
+## Test 4 - Block an incomplete enquiry on mobile
+Viewport: mobile (375x667)
+Covers: mobile hamburger navigation, required-field validation, touch-friendly enquiry form, responsive layout
+Description: Verifies the critical mobile interaction remains usable and invalid submissions are blocked.
+
+Steps:
+1. Open the hamburger menu
+2. Select “Contact”
+3. Navigate to the Enquiry section and press “REQUEST AVAILABILITY” without filling required fields
+
+Expected: The menu closes after navigation, the form remains usable without horizontal scrolling, and browser validation prevents the demo success state from appearing.
+
+## Test 5 - Verify sales-demo safeguards and WhatsApp placeholder behavior
+Viewport: desktop (1280x800)
+Covers: demo disclosure, fictional pricing, demo testimonials, fictional contact details, WhatsApp placeholder CTA, final sales CTA
+Description: Verifies the presentation cannot reasonably be mistaken for an official venue website.
+
+Steps:
+1. Confirm the top demo bar is visible
+2. Review Packages and confirm each price says “DEMO PRICING — REPLACE WITH CLIENT'S ACTUAL RATES”
+3. Review Testimonials and confirm “DEMO CLIENT” is shown
+4. Review Contact and confirm “DEMO CONTACT INFORMATION” plus placeholder phone/email
+5. Click a WhatsApp CTA
+6. Click “Request a Custom Website” equivalent final CTA button flow via the visible booking/tour actions
+
+Expected: Demo labels remain visible, fictional details are used, WhatsApp produces a prototype-only message, and no real booking, payment, or message is sent.
