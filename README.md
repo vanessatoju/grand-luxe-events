@@ -52,10 +52,6 @@ This repository contains the editable source for the deployed concept, including
 - Main application: [`src/App.tsx`](./src/App.tsx)
 - Styles: [`src/index.css`](./src/index.css)
 
-## Development Note
-
-This project was developed with modern AI-assisted development tools. The portfolio does not claim that every line was manually written from scratch by Vanessa; it presents the project as a web-development project she created using AI-assisted workflows.
-
 ## Portfolio Context
 
 **Vanessa Toju Onome** — Web Developer
